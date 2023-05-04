@@ -4,63 +4,121 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 .inline-block {
     display: inline-block;
     vertical-align: top;
 }
 
-nav {
-    width: 100%;
-    height: 90px;
-    line-height: 75px;
-    padding: 0px 100px;
-    position: fixed;
-    background-color: white;
-}
-nav ul {
-    width: 50%;
-    float: right;
-    text-align: center;
-    vertical-align: top;
-    padding: 1%;
+.navigationContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
-nav li {
-    display: inline-block;
-    font-size: 18px;
-    text-transform: uppercase;
-    padding: 0px 30px;
+nav ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
-nav li:hover{
-    color: #4C505C;
-    transition: all 0.4s ease 0s;
-}
+
 .logo img{
     width: 115px;
     height: 115px;
-    padding-left: 10%;
-    vertical-align: top;
-    
-    
 }
-section {
-    height: 800px;
-    width: 800px;
+
+.heroImg {
+    background-size: cover;
 }
-section .heroImg {
-    Position: relative;
-    Background-repeat: no-repeat;  
-    Background-size: cover;
-    Padding: 200px 0;
-    background-color: #cccccc;
-    
+
+#mainHero {
+    background-image: url(../Images/blue\ background.jpg);
+}
+
+#project1 {
+    background-image: url(../Images/backgroundimg.jpg);
+}
+
+#project2 {
+    background-image: url(../Images/sunset.jpg);
+}
+
+#project3 {
+    background-image: url(../Images/blue\ background.jpg);
 }
 
 .content {
-   width: 500px;
-   text-align: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    aspect-ratio: 2 / 1;
+}
 
-   
+@media (min-width: 800px) {
+    .content {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+.contentContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+@media (min-width: 800px) {
+    .contentContainer {
+        width: 50%;
+    }
+}
+
+.heroHeader {
+    text-align: left;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.contentContainer p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.heroImg--inverted .content {
+    flex-direction: row;
+}
+
+.cta {
+    padding: 15px 30px;
+    background: #4C505C;
+    color: #fff;
+    line-height: 1;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.cta:hover {
+    background: #000;
+}
+
+.contentContainer--alt .cta {
+    background: #BFAEB3;
+    color: #4C505C;
+}
+
+.contentContainer--alt .cta:hover {
+    background: #9c868c;
 }
 
 h1 {
