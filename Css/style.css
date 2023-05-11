@@ -54,8 +54,66 @@ nav ul {
 }
 
 #project4 {
-    background-image: url(../Images/blue\ background.jpg);
+    background-image: url(../Images/backgroundimg.jpg);
 }
+
+#contact {
+    background-color: #4C505C;
+}
+
+.contact {
+    height: 400px;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.contactcta {
+    padding: 15px 30px;
+    background: #BFAEB3;
+    color: #fff;
+    line-height: 1;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.contactcta:hover {
+    background: #000;
+}
+
+.contactContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items:center;
+    padding: 10px;
+} 
+
+.contactHeader {
+    text-align: left;
+    font-size: 1 rem;
+    margin: 0;
+    color:#fff;
+}
+
+.contactinfo {
+    color:#fff;
+}
+
+input {
+    width: 100%;
+  }
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
 
 .content {
     max-width: 1400px;
@@ -63,6 +121,7 @@ nav ul {
     position: relative;
     aspect-ratio: 2 / 1;
 }
+
 
 @media (min-width: 800px) {
     .content {
